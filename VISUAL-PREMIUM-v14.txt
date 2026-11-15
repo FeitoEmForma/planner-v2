@@ -1,0 +1,19 @@
+Feito em Forma | Planner v12 + tema premium (v14)
+
+PALETA
+- Fundo grafite: #0B1411
+- Superfícies: #14241D
+- Verde-menta: #79E7B0
+- Texto principal: #EDF8F1
+
+ALTERAÇÕES
+- Sidebar lateral e navegação mobile com ícones SVG
+- Cartões, painéis financeiros, indicadores e tabelas escuros
+- Login e calculadora integrada no mesmo tema
+- A proposta comercial preserva visual claro para PDF/impressão
+- Sem alterações de lógica, banco de dados ou permissões
+- Identidade visual independente, inspirada em diretrizes do vídeo enviado
+
+INSTALAÇÃO
+Substitua os arquivos da raiz do seu projeto no GitHub Pages pelo conteúdo da pasta Planner-main.
+Não é necessário executar nenhum SQL para aplicar o tema.

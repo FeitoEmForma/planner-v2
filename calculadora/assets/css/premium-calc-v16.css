@@ -1,0 +1,49 @@
+/* Calculadora / produtos v16 — categorias e cartões com contraste no tema premium */
+.catalog-header-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.catalog-toolbar>.field{flex:1 1 210px;max-width:460px}
+.catalog-toolbar select{height:42px;border-radius:8px}
+.catalog-category-manager{margin:12px 22px 20px;background:linear-gradient(148deg,#203a2a,#15281e);border:1px solid #43684d;border-radius:14px;padding:20px;color:#eafbF0}
+.catalog-category-manager[hidden]{display:none!important}
+.category-manager-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:16px}
+.category-manager-head h3{font-size:17px;letter-spacing:-.3px;margin:0 0 6px;color:#f1fff5}
+.category-manager-head p{font-size:11px;margin:0;color:#a7cdb1;line-height:1.55}
+.catalog-manager-close{border:1px solid #467252;background:#284b33;color:#c6f7d5;font-size:23px;line-height:1;width:35px;height:35px;border-radius:9px;flex:none}
+.category-manager-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,.75fr);gap:15px;align-items:start}
+.category-rows{display:flex;flex-direction:column;gap:7px;max-height:425px;overflow:auto;padding-right:3px}
+.category-row{display:flex;align-items:center;gap:14px;justify-content:space-between;border:1px solid #3a5944;background:#14291e;border-radius:11px;padding:12px 13px;min-width:0}
+.category-row-label{display:flex;flex-direction:column;gap:3px;min-width:0}
+.category-row-label strong{font-size:12px;color:#ecfff1;overflow-wrap:anywhere}
+.category-row-label small{font-size:10px;color:#a5bca9}
+.category-row-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:5px}
+.cat-action{border:1px solid #477558;background:#254931;color:#c4f4d2;border-radius:8px;padding:8px 10px;min-height:35px;font-size:11px;font-weight:800}
+.cat-action.danger{border-color:#7d4841;background:#412724;color:#ffcbc2}
+.category-delete-question{font-size:10px;color:#ffcfbb;line-height:1.4}
+.category-form{background:#10231a;border:1px solid #3b6047;padding:17px;border-radius:12px;display:flex;flex-direction:column;gap:11px}
+.category-form h4{color:#e8fff0;margin:0;font-size:14px}
+.category-form label{display:flex;flex-direction:column;gap:7px;color:#b6dfc3;font-size:11px;font-weight:750}
+.category-form input{width:100%;background:#193425;color:#f0fff5;border:1px solid #42724e;border-radius:8px;min-height:44px;padding:10px 12px;font-size:14px}
+.category-feedback{font-size:11px;line-height:1.5;color:#ffbeaF;margin:0}
+.category-feedback:empty{display:none}
+.category-form .btn{min-height:42px}
+.catalog-tag-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.catalog-tag.secondary{background:#2b4a34;color:#baf5cc}
+.catalog-save-calc{background:#1c4f34;color:#caffdc;border-color:#5b966a}
+.catalog-save-calc:hover{background:#2d6644}
+@media(max-width:760px){
+  .catalog-category-manager{margin:10px 13px 15px;padding:15px}
+  .category-manager-grid{grid-template-columns:1fr}
+  .category-rows{max-height:330px}
+  .catalog-header-actions .btn{font-size:11px;min-height:38px}
+  .catalog-tag-wrap{flex-direction:row;flex-wrap:wrap}
+  .catalog-card h3{font-size:14px}
+  .catalog-toolbar{gap:10px}
+  .catalog-toolbar>.field{max-width:none;flex:1 1 100%}
+}
+@media(max-width:450px){
+  .category-row{align-items:flex-start;flex-direction:column;gap:8px}
+  .category-row-actions{justify-content:flex-start}
+  .category-form input{font-size:16px}
+  .catalog-header-actions{width:100%}
+  .catalog-header-actions .btn{flex:1 1 auto}
+}
+.category-form [hidden],.catalog-category-manager [hidden]{display:none!important}

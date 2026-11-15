@@ -1,0 +1,55 @@
+/* Feito em Forma — tema visual do Planner dentro do iframe da calculadora.
+   Não interfere nos cálculos nem na formatação da proposta para impressão. */
+:root{color-scheme:dark;--bg:#0e1913;--ink:#e9f8ee;--muted:#9fb6a5;--line:#2c4536;--white:#192a20;--green:#79e7af;--shadow:0 10px 32px #0003}
+html,body{background:#0d1913;color:#e9f8ee}
+.app-shell,.app-shell>.main{background:#0d1913;color:#eefbf0}
+.embedded-nav{background:#16291e;border:1px solid #304c39;border-radius:13px;box-shadow:0 6px 20px #0002}
+.embedded-nav [data-tab]{background:#1e3527;border:1px solid #31543b;color:#c0e6ce;border-radius:9px}
+.embedded-nav [data-tab]:hover{background:#2b4b35}
+.embedded-nav [data-tab].active,.embedded-nav [data-tab][aria-current=page]{background:#83ebb4;color:#123a25;border-color:#83ebb4}
+.main>.topbar{border-color:#314d39;background:#13261b;color:#b7d9c3}
+.breadcrumb,.top-label{color:#91b49c}.eyebrow,.section-counter{color:#84dda8}
+.page-head h1,.surface h2{color:#f0fff4}
+.page-head p,.price-caption{color:#98b09d}
+.panel{background:#0d1913}
+.surface,.history-surface,.wa-preview{background:#182b20;border:1px solid #34503b;border-radius:15px;box-shadow:0 8px 24px #0003;color:#ecf9ee}
+.surface-header{background:#223c2a!important;border-color:#35553d!important}
+.surface-header h2,.surface-header .section-counter{color:#eafff1!important}
+.field,.helper-note{color:#b6d5be}.field label{color:#b5d4bc}
+.field input,.field textarea,.field select,.field .input-unit,.form-grid input,.form-grid textarea,.form-grid select{background:#102118!important;color:#f2fff5!important;border-color:#375541!important}
+.field input::placeholder,.field textarea::placeholder{color:#6d9079}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:#8ae9b2!important;box-shadow:0 0 0 3px #79ebad22!important}
+.btn-dark{background:#80e5ae;color:#103521;border-color:#80e5ae}.btn-dark:hover{background:#a1f6c7}
+.btn-outline{background:#1d3325;color:#b9f1cd;border-color:#416a4d}.btn-outline:hover{background:#2a4e34}
+.btn-orange{background:#78e1a5;border-color:#78e1a5;color:#133321}.btn-orange:hover{background:#98f4bf}
+.btn-whatsapp{background:#267e50;color:#fff}
+.price-card{background:linear-gradient(145deg,#244c36,#163023);border:1px solid #3e8056;border-radius:16px;box-shadow:0 16px 38px #0003}
+.price-big,.price-card strong{color:#e8fff1}.price-metrics>div:last-child strong{color:#98f5c2}
+.projection>div,.internal-stats>div,.breakdown{background:#203729;border-color:#344e39;color:#b6d8bf}
+.projection strong,.price-secondary strong,.internal-stats strong{color:#dff8e8}
+.breakdown-row{border-color:#34513b;color:#bad4bf}
+.calc-feedback{color:#c5e1cb}
+.quote-line,.quote-items{border-color:#32513c;color:#d9eddd}
+.quote-line .line-finance-row{color:#9cb9a3}.quote-line .line-finance-row strong{color:#e9fff1}
+.quote-line .line-finance-row.net strong{color:#8ee3ad}
+.wa-preview-head{color:#b7e9c7}.wa-preview-message{background:#102519;color:#e6fff0}
+.tiny-chip,.channel-chip,.client-safe{background:#203d2a;color:#a8efc2;border-color:#3b5f45}
+.helper-note{background:#1d3225;border-color:#3a5841}
+.site-footer{color:#829d89}
+/* A proposta entregue ao cliente não herda a identidade escura. */
+.proposal,.proposal *{color-scheme:light}
+.proposal{background:#fff!important;color:#20362b!important;border-color:#dce7de!important;box-shadow:0 7px 24px #0002}
+.proposal h3,.proposal .proposal-name,.proposal .proposal-number{color:#173d2d!important}
+.proposal .proposal-sub,.proposal .proposal-totals,.proposal .proposal-terms,.proposal p{color:#506b59}
+.proposal-table th{background:#edf3ee!important;color:#355b46!important}
+.proposal-table td{color:#365846!important;border-color:#dce7de!important}
+.proposal-totals .grand strong{color:#26754a!important}
+@media print{
+  :root{color-scheme:light}
+  html,body,.app-shell,.app-shell>.main{background:#fff!important;color:#111!important}
+  .embedded-nav,.main>.topbar{display:none!important}
+  .proposal{border:0!important;box-shadow:none!important}
+}
+
+.projection-section{display:none!important}
+.catalog-save-calc{background:#edf5ef;color:#144432}
